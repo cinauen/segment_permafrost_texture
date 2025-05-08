@@ -10,24 +10,13 @@ def main():
 
     # --- define main base folders (adjust path if required)
     # processing folder
-    #path_base = os.path.normpath(
-    #    './example/')
+    path_base = os.path.normpath(
+        './example/')
 
     # ---- folder for temporary files (best use local foder, network folders
     # can cause issues when removing the folder)
-    #path_temp = os.path.normpath(
-    #    './example/temp')
-
-    # -- other option if use separate file which contains paths
-    try:
-        import example.control_file as control_file
-    except:
-        import control_file as control_file
-    CTR_PARAM = control_file.get_ctr_param()
-    path_base = os.path.normpath(
-        CTR_PARAM['path_proc'])
     path_temp = os.path.normpath(
-        CTR_PARAM['local_temp_storage'])
+        './example/temp')
 
 
     os.environ['PROC_BASE_PATH'] = path_base
