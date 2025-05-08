@@ -1,0 +1,54 @@
+name: py_cpu_segment
+
+channels:
+  - conda-forge
+  - pytorch
+
+dependencies:
+  - pytorch=2.5.1
+  - torchvision
+  - torchaudio
+  - ignite
+  - jupyter
+  - jupyterlab
+  - h5py
+  - scikit-learn
+  - seaborn
+  - xarray
+  - rasterio
+  - rioxarray
+  - dask
+  - xarray-spatial
+  - memory_profiler
+  - cachey
+  - geopandas
+  - opencv
+  - shapely
+  - selenium
+  - shap
+  - gdal
+  - torchmetrics
+  - albumentations=2.0.4
+  - geojson
+  - scikit-image
+  - holoviews
+  - jupyter_bokeh
+  - numpy
+  - pandas
+  - matplotlib
+  - mscorefonts
+  - firefox
+  - geckodriver
+  - nodejs
+  - sidecar
+  - py-xgboost
+  - datashader
+  - hvplot
+  - ipyleaflet
+  - leafmap
+  - panel
+  - dask-ml
+  - treelite
+  - pip
+  - pip:
+    - segmentation-models-pytorch

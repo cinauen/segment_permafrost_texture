@@ -1,0 +1,7 @@
+PARAM_TRAIN_ID	n_estimators	max_depth	max_samples	max_features	bootstrap	comment
+tML01	None	None	None	None	None	for fine tuning
+tML02	500	10	1	0.5	True	na
+tML03	100	10	1	0.5	True	na
+tML04	500	10	1	sqrt	True	na
+tML05	100	10	1	sqrt	True	na
+tML99	500	10	1	0.5	True	for testing is same as tML02

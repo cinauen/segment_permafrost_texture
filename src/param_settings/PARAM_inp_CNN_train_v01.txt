@@ -1,0 +1,41 @@
+PARAM_TRAIN_ID	N_BATCH	MODEL_ARCH	MODEL_ENCODER_DEPTH	loss_weights	loss_reduction	weight_calc_type	otimizer	n_augment	aug_geom_probab	aug_col_probab	aug_col_param	aug_vers	IF_FAD_AUG	band_lst_col_aug	metrics_ignore_index	learning_rate	lr_scheduler	lr_gamma	lr_milestones	use_batchnorm	comment
+t01onl	5	smpUNet	5	1111	mean	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	class weights no sample weights
+t02onl	5	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	class weights and sample weights (weighted norm)
+t03onl	10	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	increased batch num
+t04onl	5	smpUNet	5	1111	mean	not_used	torch.optim.Adam	4	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	4-fold augmentation, class weights (4x amount of data is trained as have input chips)
+t05onl	5	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	4	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	4-fold augmentation, class and sample weights (weighted norm)
+t06onl	5	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	1	None	None	None	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	no augmentation, class and sample weights
+t01off	5	smpUNet	5	1111	mean	not_used	torch.optim.Adam	1	None	None	None	1	FALSE	0	0	0.01	exp	0.95	None	TRUE	1x offline augmentation (orig data + 1x augment), class weights
+t02off	5	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	1	None	None	None	1	FALSE	0	0	0.01	exp	0.95	None	TRUE	1x offline augmentation (orig data + 1x augment), class weights and sample weights
+t04off	5	smpUNet	5	1111	mean	not_used	torch.optim.Adam	3	None	None	None	1	FALSE	0	0	0.01	exp	0.95	None	TRUE	3x offline augmentation (orig data + 3x augment), class weights
+t05off	5	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	3	None	None	None	1	FALSE	0	0	0.01	exp	0.95	None	TRUE	3x offline augmentation (orig data + 3x augment), class weights and sample weights
+t09onl	5	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	None	0	None	TRUE	learning rate fixed 0.01
+t10onl	5	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.001	None	0	None	TRUE	learning rate fixed 0.001
+t11onl	5	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.0001	None	0	None	TRUE	learning rate fixed 0.0001
+t12onl	5	smpUNet	5	1111	none	norm_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	mulstep	0.5	20:40	TRUE	multistep learning rate
+t13onl	5	smpUNetPP	5	1111	none	norm_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	architecture smpUNetPP
+t14onl	5	smpMAnet	5	1111	none	norm_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	architecture smpMAnet
+t13off	5	smpUNetPP	5	1111	none	norm_weight	torch.optim.Adam	1	None	None	None	1	FALSE	0	0	0.01	exp	0.95	None	TRUE	architecture smpUNetPP, 1x offline augmentation (orig data + 3x augment)
+t14off	5	smpMAnet	5	1111	none	norm_weight	torch.optim.Adam	1	None	None	None	1	FALSE	0	0	0.01	exp	0.95	None	TRUE	architecture smpMAnet, 1x offline augmentation (orig data + 3x augment)
+t15onl	5	smpUNet	5	1111	none	average_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	class weights and sample weights (average weight)
+t16onl	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	no weights, 2-fold augmentation
+t16off	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	1	None	None	None	1	FALSE	0	0	0.01	exp	0.95	None	TRUE	no weights, 1x offline augmentation (orig data + 1x augment)
+t17onl	5	smpUNet	5	9999	none	average_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	class weights changing with batch and sample weights
+t18onl	5	smpUNet	5	9999	none	norm_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	class weights changing with batch and sample weights
+t19onl	5	smpUNet	5	9999	mean	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	class weights changing with batch NO sample weights
+t20onl	5	smpUNet	5	1111	sum	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	class weights sum no sample weights
+t21onl	5	smpUNet	5	9999	sum	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	class weights changing with batch NO sample weights
+t22onl	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	1	None	None	None	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	no augmentation
+t23onl	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	4	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	4-fold augment
+t23off	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	3	None	None	None	1	FALSE	0	0	0.01	exp	0.95	None	TRUE	3x offline augmentation (orig data + 3x augment), no weights
+t24onl	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	4	0.5:0.5	0.5:0.5:0.2	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	4-fold augmentation, no weights
+t25onl	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	4	0.5:0.5	0.5:0.5:0.0	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	4-fold augmentation, no weights
+t26onl	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	4	0.5:0.5	0.5:0.7	0.35:0.35:50:250	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	4-fold and increased color augmentation, no weights
+t27onl	5	smpUNet	5	None	none	average_weight	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	no class but sample weights (average weights)
+t28onl	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	4	0.5:0.5	0.5:0.7	0.35:0.35:50:250	99	TRUE	0	0	0.01	exp	0.95	None	TRUE	4-fold and increased color augmentation with FAD
+t29onl	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	2fold aug, same as t16 but add sensor number
+t30onl	5	smpDeepLabV3plus	5	None	mean	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	architecture smpDeepLabV3plus
+t31onl	5	smpDeepLabV3	5	None	mean	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	architecture smpDeepLabV3
+t32onl	5	smpMAnet	5	None	mean	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	architecture smpMAnet
+t33onl	5	smpDeepLabV3plus	5	1111	mean	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	architecture smpDeepLabV3plus with weights
+t99onl	5	smpUNet	5	None	mean	not_used	torch.optim.Adam	2	0.5:0.5	0.5:0.5	0.2:0.2:80:120	99	FALSE	0	0	0.01	exp	0.95	None	TRUE	for testing same as v16onl

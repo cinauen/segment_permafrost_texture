@@ -1,0 +1,182 @@
+PARAM_PREP_ID	file_suffix_lst	merge_bands	feature_add	standardize_add	standardize_individual	if_std_band1	if_norm_min_max_band1	norm_on_std	norm_clip	calc_PCA	PCA_components	take_log	exclude_greyscale	comment
+v000	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	False	False	standardise and normalise additional values (GLCMs) with stats from training area
+v001	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	False	False	standardise and normalise additional values (GLCMs) with stats from training area
+v002	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	False	False	standardise and normalise additional values (GLCMs) with stats from training area
+v003	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	False	False	standardise and normalise additional values (GLCMs) with stats from training area
+v004	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	False	False	standardise and normalise additional values (GLCMs) with stats from training area
+v005	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	False	3	False	False	standardise and normalise additional values (GLCMs) with stats from training area
+v006	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	False	3	False	False	standardise and normalise additional values (GLCMs) with stats from training area
+v007	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	False	3	False	False	standardise and normalise additional values (GLCMs) with stats from training area
+v008	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	False	3	False	False	standardise and normalise additional values (GLCMs) with stats from training area
+v009	:	:	:	True	No	False	True	0.5	True	False	3	False	False	Grey scales are just scaled from 0 255 to 0 1
+v010	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	True	False	With LOG
+v011	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	True	False	With LOG
+v012	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	True	False	With LOG
+v013	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	True	False	With LOG
+v014	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	False	3	True	False	With LOG
+v015	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	False	3	True	False	With LOG
+v016	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	False	3	True	False	With LOG
+v017	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	False	3	True	False	With LOG
+v018	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	False	3	True	False	With LOG
+v019	:	:	:	True	No	False	True	0.5	True	False	3	True	False	na
+v020	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v021	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v022	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v023	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v024	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v025	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v026	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v027	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v028	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v029	:	:	:	False	No	False	False	999	False	False	3	False	False	No normalization or stanardisation
+v030	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	separate	3	False	False	PCA calc per file
+v031	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	separate	3	False	False	PCA calc per file
+v032	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	separate	3	False	False	PCA calc per file
+v033	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	separate	3	False	False	PCA calc per file
+v034	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	separate	3	False	False	PCA calc per file
+v035	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	True	999	False	separate	3	False	False	PCA calc per file
+v036	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	True	999	False	separate	3	False	False	PCA calc per file
+v037	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	True	999	False	separate	3	False	False	PCA calc per file
+v038	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	True	999	False	separate	3	False	False	PCA calc per file
+v039	:	:	:	False	No	False	True	999	False	separate	3	False	False	na
+v040	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	all	3	False	False	PCA calc, over all additional (GLCMs) and after standardisation
+v041	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	all	3	False	False	PCA calc, over all additional (GLCMs) and after standardisation
+v042	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	all	3	False	False	PCA calc, over all additional (GLCMs) and after standardisation
+v043	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	all	3	False	False	PCA calc, over all additional (GLCMs) and after standardisation
+v044	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	False	True	0.5	True	all	3	False	False	PCA calc, over all additional (GLCMs) and after standardisation
+v045	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	all	3	False	False	PCA calc, over all additional (GLCMs) and after standardisation
+v046	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	all	3	False	False	PCA calc, over all additional (GLCMs) and after standardisation
+v047	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	all	3	False	False	PCA calc, over all additional (GLCMs) and after standardisation
+v048	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	False	True	0.5	True	all	3	False	False	PCA calc, over all additional (GLCMs) and after standardisation
+v049	:	:	:	True	No	False	True	0.5	True	all	3	False	False	na
+v050	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v051	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v052	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v053	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v054	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v055	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v056	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v057	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v058	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v059	:	:	:	False	all	False	False	0.5	True	False	3	False	False	stanardize all individual (per tile) with normalization after standardisation
+v060	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	False	True	0.5	True	False	3	False	False	individual (per tile) standardization only for GLCMs with normalization afterwards
+v061	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	False	True	0.5	True	False	3	False	False	individual (per tile) standardization only for GLCMs with normalization afterwards
+v062	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	False	True	0.5	True	False	3	False	False	individual (per tile) standardization only for GLCMs with normalization afterwards
+v063	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	False	True	0.5	True	False	3	False	False	individual (per tile) standardization only for GLCMs with normalization afterwards
+v064	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	False	True	0.5	True	False	3	False	False	individual (per tile) standardization only for GLCMs with normalization afterwards
+v065	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	add	False	True	0.5	True	False	3	False	False	individual (per tile) standardization only for GLCMs with normalization afterwards
+v066	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	add	False	True	0.5	True	False	3	False	False	individual (per tile) standardization only for GLCMs with normalization afterwards
+v067	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	add	False	True	0.5	True	False	3	False	False	individual (per tile) standardization only for GLCMs with normalization afterwards
+v068	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	add	False	True	0.5	True	False	3	False	False	individual (per tile) standardization only for GLCMs with normalization afterwards
+v069	:	:	:	False	add	False	True	0.5	True	False	3	False	False	na
+v070	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	True	False	999	False	False	3	False	False	individual (per tile) standardization only for GLCMs without normalization, for greyscale are standardizes according to training area
+v071	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	True	False	999	False	False	3	False	False	individual (per tile) standardization only for GLCMs without normalization, for greyscale are standardizes according to training area
+v072	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	True	False	999	False	False	3	False	False	individual (per tile) standardization only for GLCMs without normalization, for greyscale are standardizes according to training area
+v073	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	True	False	999	False	False	3	False	False	individual (per tile) standardization only for GLCMs without normalization, for greyscale are standardizes according to training area
+v074	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	add	True	False	999	False	False	3	False	False	individual (per tile) standardization only for GLCMs without normalization, for greyscale are standardizes according to training area
+v075	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	add	True	False	999	False	False	3	False	False	individual (per tile) standardization only for GLCMs without normalization, for greyscale are standardizes according to training area
+v076	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	add	True	False	999	False	False	3	False	False	individual (per tile) standardization only for GLCMs without normalization, for greyscale are standardizes according to training area
+v077	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	add	True	False	999	False	False	3	False	False	individual (per tile) standardization only for GLCMs without normalization, for greyscale are standardizes according to training area
+v078	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	add	True	False	999	False	False	3	False	False	individual (per tile) standardization only for GLCMs without normalization, for greyscale are standardizes according to training area
+v079	:	:	:	False	add	True	False	999	False	False	3	False	False	no GLCM, for greyscale are standardised according to training area
+v080	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v081	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v082	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v083	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v084	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v085	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v086	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v087	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v088	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v089	:	:	:	False	all	False	False	999	False	False	3	False	False	individual (per tile) standardization for all but no normalization
+v090	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	True	False	With LOG
+v091	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	True	False	With LOG
+v092	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	True	False	With LOG
+v093	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	True	False	With LOG
+v094	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	True	False	With LOG
+v095	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	999	False	False	3	True	False	With LOG
+v096	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	999	False	False	3	True	False	With LOG
+v097	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	999	False	False	3	True	False	With LOG
+v098	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	999	False	False	3	True	False	With LOG
+v099	:	:	:	False	all	False	False	999	False	False	3	True	False	na
+v100	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.1	True	all	3	False	False	na
+v101	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.1	True	all	3	False	False	na
+v102	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.1	True	all	3	False	False	na
+v103	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.1	True	all	3	False	False	na
+v104	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.1	True	all	3	False	False	na
+v105	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	0.1	True	all	3	False	False	na
+v106	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	0.1	True	all	3	False	False	na
+v107	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	0.1	True	all	3	False	False	na
+v108	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	all	False	False	0.1	True	all	3	False	False	na
+v109	:	:	:	False	all	False	False	0.1	True	all	3	False	False	na
+v110	a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	all	5	False	False	test PCA calc
+v111	a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	all	5	False	False	test PCA calc
+v112	a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	5	False	False	test different GLCM configuraitons with only standard scaler
+v113	a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:CORRELATION:DISSIMILARITY	:	False	all	False	False	999	False	False	5	False	False	no var and mean
+v114	a0-1-2-3_r05_norm_C01	HOMOGENEITY:ASM:CORRELATION	:	False	all	False	False	999	False	False	5	False	False	only interior texture and no mean
+v115	a0-1-2-3_r05_norm_C01	CONTRAST:VAR:DISSIMILARITY	:	False	all	False	False	999	False	False	5	False	False	only edge texture
+v120	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	False	3	False	False	np standardisation or normalization but grey scale is shifted from 00 255 to  0 1
+v121	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	False	3	False	False	na
+v122	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	False	3	False	False	na
+v123	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	False	3	False	False	na
+v124	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	False	3	False	False	na
+v125	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	True	999	False	False	3	False	False	na
+v126	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	True	999	False	False	3	False	False	na
+v127	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	True	999	False	False	3	False	False	na
+v128	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	False	No	False	True	999	False	False	3	False	False	na
+v129	:	:	:	False	No	False	True	999	False	False	3	False	False	na
+v130	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	all	5	False	False	test PCA calc
+v140	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	False	na
+v141	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	False	na
+v142	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	False	na
+v143	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	False	na
+v144	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	False	na
+v145	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	999	False	False	3	False	False	na
+v146	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	999	False	False	3	False	False	na
+v147	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	999	False	False	3	False	False	na
+v148	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	999	False	False	3	False	False	na
+v149	:	:	:	True	No	True	False	999	False	False	3	False	False	na
+v150	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	False	3	False	False	same normalization as v12X (no std or norm nut greyscale are shifted to 0 - 1)
+v151	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.5	True	False	3	False	False	same normalization as v05X std all individual with orm
+v152	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	False	False	same normalization as v08X (individual std for all but no norm)
+v153	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	False	same normalization as v14X (all std from file)
+v154	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	True	False	3	False	False	same as v17X all std from file and norm
+v155	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	False	3	False	False	same normalization as v12X (no std or norm nut greyscale are shifted to 0 - 1)
+v156	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.5	True	False	3	False	False	same normalization as v05X std all individual with orm
+v157	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	False	False	same normalization as v08X (individual std for all but no norm)
+v158	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	False	same normalization as v14X (all std from file)
+v159	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	True	False	3	False	False	same as v17X all std from file and norm
+v160	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	No	False	True	999	False	False	3	False	False	same normalization as v12X (no std or norm nut greyscale are shifted to 0 - 1)
+v161	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.5	True	False	3	False	False	same normalization as v05X std all individual with orm
+v162	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	False	False	same normalization as v08X (individual std for all but no norm)
+v163	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	False	same normalization as v14X (all std from file)
+v164	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	True	False	3	False	False	same as v17X all std from file and norm
+v165	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	999	False	False	3	False	False	same normalization as v14X (all std from file)
+v166	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	0.5	True	False	3	False	False	repeat
+v167	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	False	all	False	False	999	False	False	3	False	False	repeat
+v168	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	False	repeat
+v169	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	True	False	3	False	False	repeat
+v170	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	True	False	3	False	False	na
+v171	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	True	False	3	False	False	na
+v172	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	True	False	3	False	False	na
+v173	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	True	False	3	False	False	na
+v174	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	True	False	3	False	False	na
+v175	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	0.5	True	False	3	False	False	na
+v176	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	0.5	True	False	3	False	False	na
+v177	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	0.5	True	False	3	False	False	na
+v178	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	0.5	True	False	3	False	False	na
+v179	:	:	:	True	No	True	False	0.5	True	False	3	False	False	na
+v180	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	False	False	3	False	False	na
+v181	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	False	False	3	False	False	na
+v182	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	False	False	3	False	False	na
+v183	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	False	False	3	False	False	na
+v184	a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	0.5	False	False	3	False	False	na
+v185	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	0.5	False	False	3	False	False	na
+v186	a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	0.5	False	False	3	False	False	na
+v187	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:r05_calc_std	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	0.5	False	False	3	False	False	na
+v188	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	0.5	False	False	3	False	False	na
+v189	:	:	:	True	No	True	False	0.5	False	False	3	False	False	na
+v190	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY:MEAN	:	True	No	True	False	999	False	False	3	False	True	same as v158 but no greyscale
+v191	a0-1-2-3_r02_norm_C01:a0-1-2-3_r05_norm_C01:a0-1-2-3_r10_norm_C01:a0-1-2-3_r20_norm_C01	HOMOGENEITY:CONTRAST:ASM:VAR:CORRELATION:DISSIMILARITY	:	True	No	True	False	999	False	False	3	False	True	same as v165 but no greyscale
+v192	:	:	sensor	False	add	True	False	999	False	False	3	False	False	na
+v999	:	:	:	False	add	True	False	999	False	False	3	False	False	same as v079 just for testing
