@@ -18,6 +18,7 @@ The paper's aim is to classify permafrost landscapes into different degradation 
 For the full results please check the paper and the accompanying data, which is provided on Zenodo:
 - data: *http://dx.doi.org/10.5281/zenodo.15325742* (NOT YET PUBLIC)
 - example processing data: *http://dx.doi.org/10.5281/zenodo.15325757* (NOT YET PUBLIC)
+<br>
 
 ## Script structure
 ### Overview
@@ -32,6 +33,8 @@ The code in this repository allows testing different segmentation approaches, in
         - class weights to address class-imbalance
         - pixel based uncertainty weights
 	- Including GLCM features as input features
+<br>
+
 
 ### Workflow
 
@@ -53,18 +56,20 @@ Various segmentation frameworks setups can be tested by selecting:
  - Training options as as described in:<br>
     [ML training options](docs/PARAM_options_training_ML.md) and
     [CNN training options](docs/PARAM_options_training_CNN.md)
+<br>
 
 
 ## Example
 An example on how to setup and use this code can be found in
 the *example* folder see:
 [example description](example/README.md)
+<br>
 
 
 ## Installation
 For instructions on how to run this script see:
 [INSTALL](docs/INSTALL.md)
-
+<br>
 
 
 ## Used modules and data
@@ -91,11 +96,13 @@ The example included in this repository contains a small subset of Hexagon
 (KH-9PC) imagery. The original data was provided by the United States
 Geological Survey Earth Resources Observation and Science (EROS) Center
  and can be downloaded from the [EarthExplorer](https://earthexplorer.usgs.gov/).
+<br>
 
 
 ## License
 Please see [LICENSES](LICENSE.md) for information about how the content is
 licensed.
+<br>
 
 
 ## Citation
