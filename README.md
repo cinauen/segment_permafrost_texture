@@ -16,8 +16,8 @@ The paper's aim is to classify permafrost landscapes into different degradation 
 ![example predictions](docs/Example_patches_trained_on_BLya_HEX_SPOT_A01A02_2x.png)
 
 For the full results please check the paper and the accompanying data, which is provided on Zenodo:
-- data: *http://dx.doi.org/10.5281/zenodo.15325742* (NOT YET PUBLIC)
-- example processing data: *http://dx.doi.org/10.5281/zenodo.15325757* (NOT YET PUBLIC)
+- data: *http://dx.doi.org/10.5281/zenodo.15325741*
+- example processing data: *http://dx.doi.org/10.5281/zenodo.15325756*
 <br>
 
 ## Script structure
