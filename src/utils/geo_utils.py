@@ -1467,7 +1467,7 @@ def remove_small_shapes_from_raster(
     img_rem = img_rem.rio.interpolate_na(method='nearest')
 
     # reset nodata value
-    img_rem.rio.set_nodata(0, inplace=True)
+    img_rem.rio.write_nodata(0, inplace=True)
 
     # add ii=nitial band name
     img_rem = convert_img_to_dtype(
