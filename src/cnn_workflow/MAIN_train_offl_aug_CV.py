@@ -3,6 +3,8 @@
 ============ Training after affline augmentation ===============
 (training is run with: cnn_workflow/MAIN_train_offl_aug.py)
 
+For detailed function description see: cnn_workflow/MAIN_train_offl_aug.py
+
 --- Run script in command line
 usage: MAIN_train_offl_aug_CV.py [-h] [--GPU_LST_STR GPU_LST_STR] [--GPU_num_GLCM GPU_NUM_GLCM] PATH_PROC PARAM_PREP_ID PARAM_TRAIN_ID PARAM_FILE
 

@@ -1,4 +1,11 @@
 '''
+Evaluates true positives (TP), true negatives (TN), false positives (FP),
+and false negatives (FN) per ground truth uncertainty/weight.
+
+For certain categories (baydzherakhs) the ground truth data contains
+label certainty levels. The metrics are calculated per this uncertainty
+class to provide a better understanding  of model performance in
+relation to label certainty/data quality.
 
 '''
 
@@ -20,7 +27,31 @@ def main(PRED_IMG=None, TRUE_IMG=None, CLASS_TO_EVAL=1, AOI_PATH=None,
          EPSG=32654, DICT_RELABEL=None, MASK_TO_NAN_LST=None,
          PREFIX_OUT=None, min_px_size=None):
     '''
-    pred_img and true img can be path or xarray image
+    Input:
+    PRED_IMG: str (path) or xarray.DataArray
+        prediction raster either given as path (string) or
+        xarray.DataArray image
+    TRUE_IMG: str (path) or xarray.DataArray
+        ground truth raster either given as path (string) or
+        xarray.DataArray image
+    CLASS_TO_EVAL: int
+        class/category number for which the metrics should be calculated
+    AOI_PATH: str (optional)
+        Path to .geojson file with area of interest
+    EPSG: int
+        Coordinate system CRS EPSG code
+    DICT_RELABEL: dict or None (optional)
+        Dictionary specifying class relabelling {from: to}
+    MASK_TO_NAN_LST: list or None (optional)
+        List of class/category numbers which should be set to background
+        (thus not be taken into account for stats)
+    PREFIX_OUT: str
+        Prefix for output file name
+    min_px_size: int or None (optional)
+        If set to int, then all shapes smaller than the specified number are
+        removed and filled with nearest value
+
+    Retruns
 
     '''
     # ----- get prediction image -----
@@ -76,8 +107,6 @@ def main(PRED_IMG=None, TRUE_IMG=None, CLASS_TO_EVAL=1, AOI_PATH=None,
     if min_px_size is not None:
         pred_xr = geo_utils.remove_small_shapes_from_raster(
             pred_xr, min_px_size, 'class_pred', EPSG, plot_hist=True)
-    #else:
-    #    pred_rem = pred_xr
 
     # rename band name of true class
     true_class = true_class.assign_coords(band=('band', ['class_true']))
@@ -190,7 +219,6 @@ if __name__ == '__main__':
         default=None)
 
 
-    # PRED_IMG=None, TRUE_IMG=None, AOI_PATH=None, EPSG=32654
     args = parser.parse_args()
 
     main(**vars(args))

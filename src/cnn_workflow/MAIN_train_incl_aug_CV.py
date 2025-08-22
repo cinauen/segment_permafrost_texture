@@ -1,7 +1,9 @@
 """
 ====== By looping through all cross-validation options: ======
 ============ Training with on-the fly augmentation ===============
-(training is run with: cnn_workflow/MAIN_trainonl.py)
+(training is run with: cnn_workflow/MAIN_train_incl_aug.py)
+
+For detailed function description see: cnn_workflow/MAIN_train_incl_aug.py
 
 --- Run script in command line
 usage: MAIN_train_incl_aug_CV.py [-h] [--GPU_LST_STR GPU_LST_STR] [--GPU_num_GLCM GPU_NUM_GLCM] PATH_PROC PATH_LOCAL PARAM_PREP_ID PARAM_TRAIN_ID PARAM_FILE
@@ -9,7 +11,8 @@ usage: MAIN_train_incl_aug_CV.py [-h] [--GPU_LST_STR GPU_LST_STR] [--GPU_num_GLC
 positional arguments:
   PATH_PROC             path to processing folder (2_segment folder)
   PATH_LOCAL            path where to save temp files
-  PARAM_PREP_ID         id for merge and scaling parameters e.g. v079 (from train_prep, pred_prep)
+  PARAM_PREP_ID         id for merge and scaling parameters e.g. v079
+                        (from train_prep, pred_prep)
   PARAM_TRAIN_ID        id for training parameters e.g. t16onl
   PARAM_FILE            name of framework parameter file
 

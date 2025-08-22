@@ -33,8 +33,8 @@ def img_to_df_proc(inp_img, rename_dict=None, use_GPU=False):
 
     previousely called: xarray_to_cudf
 
-    !!! use_GPU is here set to False per defauly this is because
-        for ml_workflow False is here required for preprocessing
+    !!! use_GPU is here set to False per default this is because
+        for ml_workflow False is required for preprocessing
     '''
     df = xarray_to_df(inp_img)
     if rename_dict is not None:

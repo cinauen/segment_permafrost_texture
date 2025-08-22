@@ -3,13 +3,17 @@
 ============ Evaluate model on test patches ===============
 (evaluation is run with: cnn_workflow/MAIN_evaluate_model.py)
 
+For detailed function description see: cnn_workflow/MAIN_evaluate_model.py
+
 --- Run script in command line
 usage: MAIN_evaluate_model_CV.py [-h] [--GPU_LST_STR GPU_LST_STR] PATH_PROC PARAM_PREP_ID PARAM_TRAIN_ID PARAM_FILE
 
 positional arguments:
   PATH_PROC             path to processing folder (2_segment folder)
-  PARAM_PREP_ID         id for merge and scaling parameters e.g. v079 (PARAM_inp_CNN_feature_prep_v01.txt)
-  PARAM_TRAIN_ID        id for training parameters e.g. t16onl (PARAM_inp_CNN_train_v01.txt)
+  PARAM_PREP_ID         id for merge and scaling parameters e.g. v079
+                        (PARAM_inp_CNN_feature_prep_v01.txt)
+  PARAM_TRAIN_ID        id for training parameters e.g. t16onl
+                        (PARAM_inp_CNN_train_v01.txt)
   PARAM_FILE            name of framework parameter file
 
 options:

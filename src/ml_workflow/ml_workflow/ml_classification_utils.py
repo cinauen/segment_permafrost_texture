@@ -13,9 +13,9 @@ image pre-processing using scikit-learn
 
 TODO:
 - replace self.text_add with a proper logging option
-- check for better options on how to bets deal with negative values
-  when taking log or exp. Currently here just shift data acoording
-  to min value si self.X
+- check for better options on how to best deal with negative values
+  when taking log or exp. Currently, here just shift data acoording
+  to min value in self.X
 - adapt max_features for PCA usage (use n_components instead of
   n_features)
 

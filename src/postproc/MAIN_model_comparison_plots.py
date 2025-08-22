@@ -4,11 +4,11 @@ Creates comparison plots on the test patch metrics.
 
 Before running this script:
 - adjust INPUT PARAMETERS further below
-- edit the combination of segmentation frameworks to compare in the file
+- edit the combination of segmentation frameworks to compare in:
     src/postproc/postproc/plot_param_sets.py in get_param_sets()
 
-!!! SITE corresponds to the site on which the model was trained on !!!
-(not the test prediction area. The test predition area is defined by the
+!!! SITE corresponds to the site on which the model was trained on!!!
+(SITE does NOT correspond to the test area. The test area is defined by the
 phase)
 
 '''
@@ -104,7 +104,7 @@ overfit_threshold = 0.1
 metrics_decide = 'jacc_macro'
 
 PARAM['CLASS_LABELS'] = [
-        [0, 1, 2, 3, 4, 5, 6], #7],  # , 8],
+        [0, 1, 2, 3, 4, 5, 6],
         ['nan', 'baydherakhs', 'ridges_ponds', 'stable_areas',
          'gully_base', 'ponds', 'snow']]
 
@@ -155,7 +155,7 @@ PARAM['TEST_dict'] = {
 
 # in case the file name patch prefix differs from the folder name this
 # can be added here {foldername: test patch prefix in file, ...}
-# file naming of htest patches is
+# file naming of test patches is
 # v079t16onl_cv00_ncla7_BLyaE_HEX1979_test-04_ep64_class_pred
 # {identifier for framework setup}_{test patch prefix}-{test patch number}_ep{XX}_class_pred
 PARAM['TEST_dict_DL_patch_prefix'] = {

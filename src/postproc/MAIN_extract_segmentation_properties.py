@@ -1,4 +1,13 @@
 '''
+Extracts geometric properties from a predicted image and its corresponding
+ground truth image.
+
+Properties are:
+- area
+- pixel size
+- circularity
+- perimeter
+
 '''
 
 import os
@@ -14,7 +23,37 @@ def main(PRED_IMG=None, TRUE_IMG=None, AOI_PATH=None, EPSG=32654,
          DICT_RELABEL=None, MASK_TO_NAN_LST=None, PREFIX_OUT=None,
          additionally_save_with_min_px_size=3):
     '''
-    pred_img and true img can be path or xarray image
+    Extracts segmentation properties from a predicted image and its
+    corresponding ground truth image.
+
+    Input:
+    PRED_IMG: str or xarray
+        Path to the predicted image or xarray image object.
+    TRUE_IMG: str or xarray
+        Path to the ground truth image or xarray image object.
+    AOI_PATH: str (optional)
+        Path to the Area of Interest (AOI) file for clipping.
+    EPSG: int
+        EPSG code for the images (default: 32654).
+    DICT_RELABEL: dict (optional)
+        Dictionary for relabeling classes in the ground truth image.
+        {from: to}
+    MASK_TO_NAN_LST: list (optional)
+        List of classes to be set to background in the ground truth image.
+    PREFIX_OUT: (optional)
+        Prefix for the output file names.
+    additionally_save_with_min_px_size: int (optional)
+        Minimum pixel size for saving additional files.
+        If specified, shapes smaller than the defined size are removed
+        for calculating the gemetric properties. The resulting
+        geodataframe is saved to a separate .txt and .geojson file
+        (thus the function output is not modified)
+
+    Returns:
+    gdf_pred: GeoDataFrame
+        Predicted segmentation properties.
+    gdf_true: GeoDataFrame
+        Ground truth segmentation properties.
     '''
     # ----- get prediction image -----
     if isinstance(PRED_IMG, str):
@@ -139,7 +178,7 @@ def main(PRED_IMG=None, TRUE_IMG=None, AOI_PATH=None, EPSG=32654,
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Process single images')
+    parser = argparse.ArgumentParser(description='Extract geometric properties from raster (ground truth and pred)')
     parser.add_argument(
         'PRED_IMG', type=str,
         help=('PATH of predicted image (if use not as direct function...)'))

@@ -1,7 +1,11 @@
 """
 ====== By looping through all cross-validation options: ======
-=================== ML classification ====================
-(run with: ml_workflow/MAIN_RF_classify.py)
+=================== Run ML classification ====================
+(is run with: ml_workflow/MAIN_RF_classify.py)
+
+
+For detailed function description see: ml_workflow/MAIN_RF_classify.py
+
 
 --- Run script in command line
 usage: MAIN_RF_classify_CV.py [-h] [--GPU_LST_STR GPU_LST_STR] [--N_JOBS N_JOBS] PATH_PROC PROC_STEP PARAM_PREP_ID PARAM_TRAIN_ID PARAM_FILE
