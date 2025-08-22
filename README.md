@@ -4,7 +4,7 @@ This repository provides the code used in the following paper:<br>
 
 ---
 
-*PREPRINT: Inauen, C., Nitze, I, Langer, M., Morgenstern, A., Hajnsek, I., Grosse, G. (2025). Using texture-based image segmentation and machine learning with high-resolution satellite imagery to assess permafrost degradation in the Russian High Arctic. ESS Open Archive. February 15, 2025. DOI: https://doi.org/10.22541/essoar.173965735.56131153/v1*
+*Inauen, C. M., Nitze, I., Langer, M., Morgenstern, A., Hajnsek, I., & Grosse, G. (2025). Using Texture-Based Image Segmentation and Machine Learning With High-Resolution Satellite Imagery to Assess Permafrost Degradation Landforms in the Russian High Arctic. Journal of Geophysical Research: Machine Learning and Computation, 2(3), e2024JH000550. https://doi.org/https://doi.org/10.1029/2024JH000550*
 
 ---
 
